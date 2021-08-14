@@ -29,7 +29,11 @@
     <Flows>
         <Flow name="GetEmployees">
             <Description/>
-            <Request/>
+            <Request>
+                <Step>
+                    <Name>Quota-2</Name>
+                </Step>
+            </Request>
             <Response>
                 <Step>
                     <Name>JSON-to-XML-1</Name>

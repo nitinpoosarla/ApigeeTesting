@@ -6,12 +6,13 @@
         <VersionInfo resourceName="AM_QuotaErrorMsg" version="SHA-512:f3af6ad3980b81739c9d52da4ac71fe4a3b2ba5ee55e5f37b63b87446d101f569d8f655da4b7bdff03bdc50f9dc90aaffff3fbab66df1145d1dbb46315fbca5f"/>
         <VersionInfo resourceName="JSON-to-XML-1" version="SHA-512:b404f3275d2be6a0f690b578abe0cabf161ff8f6f1c710c6a3e1d8e64c2f5dd62f816bd17ad16f9edd2f5e557bb0feecd2b61a8f53254714a2289b07876bce74"/>
         <VersionInfo resourceName="Quota-1" version="SHA-512:bb86a22860cbec5cd383611f923e210e1b9cf5cdc4c7962c9b944dc01e1dcaf07df2538c172190c3d4aa649a7b1301d9ecd7633859bbd12483e9531b30918163"/>
+        <VersionInfo resourceName="Quota-2" version="SHA-512:0d342aa971dd06f66d5959bd93d02d916da1cdc32da2a0ceae81cf0634f9b95bbc7eef8c708f78b7c8d30001291c25243c8ceb5c69f50f95e29d7bf4338d6ab5"/>
         <VersionInfo resourceName="REEXP" version="SHA-512:43ed1fe646eca3e4a7be24ce5626d3e2942319efcff91adde5cdfa330417b5c41203da4c351d31a0cc25fb99ee946980142c1e52a777ac92b52c84be30e55241"/>
         <VersionInfo resourceName="RF_QueryCount" version="SHA-512:0b62e45c139d77fbac21d76790a553f893331a867adbf5d7964229515b12a7480771bc6ddd60b462ee85e8ab9727b5b180cbfa333e06742b2ece4f4070cccc8c"/>
         <VersionInfo resourceName="ReturnGenericError" version="SHA-512:55f010c517df9333315bcc75ee592fa40a40d91efd45ba8e816b65ac8ef9eae6faf12a2b18b299185201a95082c47d12f00a94429f0d47e9c2570c1c9ac7e8ae"/>
     </Policies>
     <ProxyEndpoints>
-        <VersionInfo resourceName="default" version="SHA-512:f04f482c1bc74580a729b8be3f234aebeffaaf47f1591f732989920d0cd7e6e48e30319ff694a13326aaece739af9ea7315b5beae7009ce83f21080221366c0b"/>
+        <VersionInfo resourceName="default" version="SHA-512:5a8fb88fd014e329af9272f17084e3530c14922d5d9eaa4b6f40e15bea5c7661fa89c3e1058c23b066b56c47e5b2b6a3bc897133b2e7a4586038b0bec63a57d1"/>
     </ProxyEndpoints>
     <Resources/>
     <SharedFlows/>

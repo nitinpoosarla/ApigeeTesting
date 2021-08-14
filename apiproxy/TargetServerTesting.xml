@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<APIProxy revision="1" name="TargetServerTesting">
+<APIProxy revision="2" name="TargetServerTesting">
     <Basepaths>/targetservertesting</Basepaths>
     <ConfigurationVersion majorVersion="4" minorVersion="0"/>
-    <CreatedAt>1628845685649</CreatedAt>
+    <CreatedAt>1628936720232</CreatedAt>
     <CreatedBy>nithin.poosarla@gmail.com</CreatedBy>
     <Description></Description>
     <DisplayName>TargetServerTesting</DisplayName>
-    <LastModifiedAt>1628926589297</LastModifiedAt>
+    <LastModifiedAt>1628936720232</LastModifiedAt>
     <LastModifiedBy>nithin.poosarla@gmail.com</LastModifiedBy>
-    <ManifestVersion>SHA-512:ccf9323de4c55378cb4a6074b1aecb63f6b1f13efeb724c1fbc7206a3795ae277ca5cc7134ebb79405ae378f1a01712df1fff026d000f1c46f740a0d60685c72:eu-west-1</ManifestVersion>
+    <ManifestVersion>SHA-512:e1c451b1da82b8e0194b0fc450edbb27e7d03daf1fd0188c7eae9d549fb4d1fc7ce8d8d9c5c470812356a6f695888f4b023eb2db1d9d5fd402350c23cd9071aa</ManifestVersion>
     <Policies>
         <Policy>AM_AuthError</Policy>
         <Policy>AM_BadRequest</Policy>
         <Policy>AM_QuotaErrorMsg</Policy>
         <Policy>JSON-to-XML-1</Policy>
         <Policy>Quota-1</Policy>
+        <Policy>Quota-2</Policy>
         <Policy>REEXP</Policy>
         <Policy>RF_QueryCount</Policy>
         <Policy>ReturnGenericError</Policy>
