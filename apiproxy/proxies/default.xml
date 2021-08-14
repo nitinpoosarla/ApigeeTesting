@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ProxyEndpoint name="default">
+    <RouteRule name="PostEmployees">
+        <Condition>(proxy.pathsuffix MatchesPath "/post") and (request.verb = "POST")</Condition>
+        <URL>http://httpbin.org</URL>
+    </RouteRule>
+    <RouteRule name="GetEmployees">
+        <Condition>(proxy.pathsuffix MatchesPath "/getEmployees") and (request.verb = "GET")</Condition>
+        <URL>http://mocktarget.apigee.net/json</URL>
+    </RouteRule>
+    <FaultRules>
+        <FaultRule name="quotaerror">
+            <Step>
+                <Name>AM_QuotaErrorMsg</Name>
+            </Step>
+            <Condition>(fault.name = "QuotaViolation")</Condition>
+        </FaultRule>
+    </FaultRules>
+    <DefaultFaultRule name="fault-rule">
+        <Step>
+            <Name>ReturnGenericError</Name>
+        </Step>
+        <AlwaysEnforce>true</AlwaysEnforce>
+    </DefaultFaultRule>
+    <PreFlow name="PreFlow">
+        <Request/>
+        <Response/>
+    </PreFlow>
+    <Flows>
+        <Flow name="GetEmployees">
+            <Description/>
+            <Request/>
+            <Response>
+                <Step>
+                    <Name>JSON-to-XML-1</Name>
+                    <Condition>(request.header.Accept = "application/xml")</Condition>
+                </Step>
+            </Response>
+            <Condition>(proxy.pathsuffix MatchesPath "/getEmployees") and (request.verb = "GET")</Condition>
+        </Flow>
+        <Flow name="PostEmployees">
+            <Description/>
+            <Request/>
+            <Response/>
+            <Condition>(proxy.pathsuffix MatchesPath "/PostEmployee") and (request.verb = "POST")</Condition>
+        </Flow>
+    </Flows>
+    <PostFlow name="PostFlow">
+        <Request/>
+        <Response/>
+    </PostFlow>
+    <HTTPProxyConnection>
+        <BasePath>/targetservertesting</BasePath>
+        <VirtualHost>secure</VirtualHost>
+    </HTTPProxyConnection>
+    <RouteRule name="default">
+        <TargetEndpoint>default</TargetEndpoint>
+    </RouteRule>
+</ProxyEndpoint>
